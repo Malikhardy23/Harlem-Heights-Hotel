@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**************************************/
+
+/* CONTAINER */
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+/* END OF CONTAINER */
+
+/**************************************/
+
+/* TOP SECTION  */
+
+#topSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: blue;
+    flex-wrap: wrap-reverse;
+
+}
+
+#topSection #logIn{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#topSection #signUp{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#topSection #logo{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#topSection #navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#topSection #navbar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    justify-content: center;
+}
+
+/* END OF TOP SECTION  */
+
+/**************************************/
+
+/* MID SECTION  */
+
+#midSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+}
+
+/* IMAGE SLIDER */
+
+#midSection #imageSlider{
+    height: 500px;
+    width: 100%;
+}
+
+[data-component="slideshow"] .slide {
+    display: none;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+  }
+
+#midSection #imageSlider .image{
+    display: none;
+}
+
+
+#midSection #imageSlider .image{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+#midSection #imageSlider .image1{
+   background: url('https://images.pexels.com/photos/172872/pexels-photo-172872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+   height: 400px;
+   width: 100%;
+   background-position: center center;
+   background-size: cover;
+}
+
+#midSection #imageSlider .image2{
+    background: url('https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 400px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+ }
+
+#midSection #imageSlider .image3{
+    background: url('https://images.pexels.com/photos/518244/pexels-photo-518244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 400px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#midSection #imageSlider .image4{
+    background: url('https://images.pexels.com/photos/573552/pexels-photo-573552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 400px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+#midSection #imageSlider .image5{
+    background: url('https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 400px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* END OF IMAGE SLIDER */
+
+#midSection #cardContainer{
+    height: 500px;
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+}
+
+#midSection #cardContainer .card{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: #fff;
+    padding: 25px;
+
+}
+
+
+
+/* END OF MID SECTION  */
+
+/**************************************/
+
+/* BOTTOM SECTION  */
+
+
+#bottomSection{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-color: green;
+}
+
+#bottomSection #footer .links-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+#bottomSection #footer .links-container a{
+    padding: 10px 15px;
+}
+
+
+/* END OF BOTTOM SECTION  */
